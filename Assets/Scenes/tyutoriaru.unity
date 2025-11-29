@@ -1266,6 +1266,9 @@ GameObject:
   - component: {fileID: 1940778356}
   - component: {fileID: 1940778357}
   - component: {fileID: 1940778358}
+  - component: {fileID: 1940778361}
+  - component: {fileID: 1940778360}
+  - component: {fileID: 1940778359}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1379,9 +1382,8 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1940778344}
-  selectedCommands:
-  - {fileID: 1940778357}
+  - {fileID: 1940778361}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -1742,6 +1744,61 @@ MonoBehaviour:
     stringVal: seen1
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &1940778359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940778340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b359b09a7ba2e4af981f07c07f8af85a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.StopMusic
+  itemId: 16
+  indentLevel: 0
+--- !u!114 &1940778360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940778340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff5d850a887844fe87ae7d366d3ab5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.FlowchartEnabled
+  parentBlock: {fileID: 1940778361}
+  suppressBlockAutoSelect: 0
+--- !u!114 &1940778361
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940778340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.Block
+  nodeRect:
+    serializedVersion: 2
+    x: 222
+    y: 145
+    width: 100.240005
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 15
+  blockName: stopbgm
+  description: 
+  eventHandler: {fileID: 1940778360}
+  commandList:
+  - {fileID: 1940778359}
+  suppressAllAutoSelections: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

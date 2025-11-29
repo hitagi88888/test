@@ -387,8 +387,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
-    y: 71
+    x: 66
+    y: 72
     width: 98.57
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -424,8 +424,7 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 876924374}
+  selectedBlocks: []
   selectedCommands: []
   variables: []
   description: 
@@ -1507,7 +1506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Fungus::Fungus.FungusState
-  selectedFlowchart: {fileID: 1208019346}
+  selectedFlowchart: {fileID: 876924375}
 --- !u!4 &2034120850
 Transform:
   m_ObjectHideFlags: 1
