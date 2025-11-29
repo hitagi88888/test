@@ -1002,8 +1002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: hitagi
-  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  nameText: "\u3072\u305F\u3058\u3044"
+  nameColor: {r: 0, g: 0, b: 0, a: 1}
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: -715783065386277974, guid: a0be19190937e5a43863683e5c71a142, type: 3}
