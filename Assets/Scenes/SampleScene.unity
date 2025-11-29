@@ -632,6 +632,7 @@ GameObject:
   - component: {fileID: 1121263502}
   - component: {fileID: 1121263505}
   - component: {fileID: 1121263504}
+  - component: {fileID: 1121263506}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -665,7 +666,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1121263505}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 1121263506}
   variables: []
   description: 
   stepPause: 0
@@ -778,7 +780,25 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1121263504}
+  - {fileID: 1121263506}
   suppressAllAutoSelections: 0
+--- !u!114 &1121263506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121263498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd2f6be51b3d7490ba5633ee095d0391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Fungus::Fungus.PlaySound
+  itemId: 4
+  indentLevel: 0
+  soundClip: {fileID: 8300000, guid: 4cb8180743b130846816769f62c41af8, type: 3}
+  volume: 1
+  waitUntilFinished: 0
 --- !u!1 &1181702644
 GameObject:
   m_ObjectHideFlags: 0

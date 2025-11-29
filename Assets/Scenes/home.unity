@@ -292,8 +292,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 666552771}
-  selectedCommands:
-  - {fileID: 666552769}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -424,7 +423,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 876924374}
   selectedCommands: []
   variables: []
   description: 
@@ -879,7 +879,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1208019350
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Fungus::Fungus.PlaySound
   itemId: 5
   indentLevel: 0
-  soundClip: {fileID: 8300000, guid: 61f09048d7ee4944da133cd6b0ede085, type: 3}
+  soundClip: {fileID: 8300000, guid: 4cb8180743b130846816769f62c41af8, type: 3}
   volume: 1
   waitUntilFinished: 1
 --- !u!1 &1232531248
