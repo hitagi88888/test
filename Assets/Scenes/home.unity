@@ -292,7 +292,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 666552771}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 666552769}
   variables: []
   description: 
   stepPause: 0
@@ -1525,7 +1526,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Fungus::Fungus.FungusState
-  selectedFlowchart: {fileID: 1208019346}
+  selectedFlowchart: {fileID: 666552772}
 --- !u!4 &2034120850
 Transform:
   m_ObjectHideFlags: 1
@@ -1547,9 +1548,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 2034120850}
   - {fileID: 947112731}
+  - {fileID: 1601511588}
   - {fileID: 1232531251}
   - {fileID: 120690693}
-  - {fileID: 1601511588}
   - {fileID: 666552773}
   - {fileID: 876924376}
   - {fileID: 1208019347}
