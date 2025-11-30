@@ -769,7 +769,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 50
-    y: 196
+    y: 195
     width: 82.22
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -779,12 +779,12 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 0}
   commandList:
-  - {fileID: 1121263504}
   - {fileID: 1121263506}
+  - {fileID: 1121263504}
   suppressAllAutoSelections: 0
 --- !u!114 &1121263506
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
