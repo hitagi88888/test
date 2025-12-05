@@ -1389,10 +1389,6 @@ GameObject:
   - component: {fileID: 1940778350}
   - component: {fileID: 1940778349}
   - component: {fileID: 1940778348}
-  - component: {fileID: 1940778347}
-  - component: {fileID: 1940778355}
-  - component: {fileID: 1940778356}
-  - component: {fileID: 1940778357}
   - component: {fileID: 1940778358}
   - component: {fileID: 1940778361}
   - component: {fileID: 1940778360}
@@ -1484,10 +1480,6 @@ MonoBehaviour:
   - {fileID: 1940778341}
   - {fileID: 1940778348}
   - {fileID: 1940778351}
-  - {fileID: 1940778347}
-  - {fileID: 1940778357}
-  - {fileID: 1940778356}
-  - {fileID: 1940778355}
   - {fileID: 1940778358}
   suppressAllAutoSelections: 0
 --- !u!114 &1940778345
@@ -1517,7 +1509,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1940778344}
   selectedCommands:
-  - {fileID: 1940778350}
+  - {fileID: 1940778358}
   variables: []
   description: 
   stepPause: 0
@@ -1544,36 +1536,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1940778347
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940778340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Portrait
-  itemId: 10
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1388289727}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 7745204819805129774, guid: 965a28cbc5550cf4a971ce713eb5cfbc, type: 3}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
 --- !u!114 &1940778348
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1775,90 +1737,6 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 0
---- !u!114 &1940778355
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940778340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 11
-  indentLevel: 0
-  storyText: "\u3072\u305F\u3058\u3044\u306F\u904E\u9177\u306A\u52B4\u50CD\u306B\u3088\u3063\u3066\u904E\u52B4\u6B7B\u3057\u305F"
-  description: 
-  character: {fileID: 965503881}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
---- !u!114 &1940778356
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940778340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Portrait
-  itemId: 12
-  indentLevel: 0
-  display: 2
-  stage: {fileID: 0}
-  character: {fileID: 1388289727}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 0}
-  offset: 0
-  fromPosition: {fileID: 0}
-  toPosition: {fileID: 0}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 0
-  shiftIntoPlace: 0
-  waitUntilFinished: 0
---- !u!114 &1940778357
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1940778340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Fungus::Fungus.Say
-  itemId: 13
-  indentLevel: 0
-  storyText: "(\u6607\u5929)"
-  description: 
-  character: {fileID: 0}
-  portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
-  showAlways: 1
-  showCount: 1
-  extendPrevious: 0
-  fadeWhenDone: 1
-  waitForClick: 1
-  stopVoiceover: 1
-  waitForVO: 0
-  setSayDialog: {fileID: 0}
 --- !u!114 &1940778358
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1875,7 +1753,7 @@ MonoBehaviour:
   indentLevel: 0
   _sceneName:
     stringRef: {fileID: 0}
-    stringVal: seen1
+    stringVal: tyutoriaru1
   loadingImage: {fileID: 0}
   sceneNameOLD: 
 --- !u!114 &1940778359
