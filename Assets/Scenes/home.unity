@@ -153,7 +153,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 0
-  m_AspectRatio: 2
+  m_AspectRatio: 5
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
@@ -476,7 +476,8 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 876924374}
-  selectedCommands: []
+  selectedCommands:
+  - {fileID: 876924373}
   variables: []
   description: 
   stepPause: 0
@@ -1576,7 +1577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Fungus::Fungus.FungusState
-  selectedFlowchart: {fileID: 666552772}
+  selectedFlowchart: {fileID: 876924375}
 --- !u!4 &2034120850
 Transform:
   m_ObjectHideFlags: 1
