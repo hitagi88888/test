@@ -21,14 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/tyutoriaru.unity
     guid: a06711bc47404b54189950b650a7dde7
   - enabled: 1
-    path: Assets/Scenes/tyutoriaru1.unity
-    guid: 05c6969e80968944da0052e54d6eca36
-  - enabled: 1
     path: Assets/Scenes/Road page.unity
     guid: b7a87601a0e44d443b597eac49492578
   - enabled: 1
     path: Assets/Scenes/seen1.unity
-    guid: 1150bf5c3b902f94cbb00c2e8bf78a6a
+    guid: cdc3bdf98bd2e8b439d589f334a9d50b
   - enabled: 1
     path: Assets/Scenes/seen3.unity
     guid: f10a6d597d173224ab61dd782af1ee9b
@@ -44,9 +41,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/seen5-1.unity
     guid: 9f4a88925afdfef4b8c2b226b4db04c8
-  - enabled: 1
-    path: Assets/Scenes/tyutoriaru2.unity
-    guid: d13e4411a82da774a91bd5c6015d3a66
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
