@@ -14,18 +14,23 @@ public class TextClickSystem : MonoBehaviour
         public int GroupID;
         public int UIID;
         public int LineNumber;
+        public string Character;
         public string Text;
+        public int Tachie;
     }
 
     // UI要素
     public TextMeshProUGUI textTMP;
+    public TextMeshProUGUI textChara;
     public GameObject image_text;
     public GameObject image_serihu;
     public GameObject image;
+    public GameObject[] image_tachie;
 
     private int selectedGroupID;
     private int currentLineIndex = 0;
     private bool isDisplayingText = false;
+    private int i;
 
     // CSVデータを保持する辞書
     private Dictionary<int, List<TextData>> textDataDictionary = new Dictionary<int, List<TextData>>();
@@ -48,7 +53,12 @@ public class TextClickSystem : MonoBehaviour
         image_text.SetActive(false);
         image_serihu.SetActive(false);
         textTMP.gameObject.SetActive(false);
+        textChara.gameObject.SetActive(false);
         image.SetActive(false);
+        for (i = 0; i < image_tachie.Length; i++)
+        {
+            image_tachie[i].SetActive(false);
+        }
 
         // ゲーム開始時にCSVを読み込む
         LoadTextData();
@@ -73,14 +83,17 @@ public class TextClickSystem : MonoBehaviour
 
             if (int.TryParse(fields[0].Trim(), out int groupID) &&
                 int.TryParse(fields[1].Trim(), out int uiID) &&
-                int.TryParse(fields[2].Trim(), out int lineNumber))
+                int.TryParse(fields[2].Trim(), out int lineNumber)&&
+                int.TryParse(fields[5].Trim(), out int tachie))
             {
                 TextData data = new TextData
                 {
                     GroupID = groupID,
                     UIID = uiID,
                     LineNumber = lineNumber,
-                    Text = fields[3].Trim('\"')
+                    Character = fields[3].Trim('\"'),
+                    Text = fields[4].Trim('\"'),
+                    Tachie = tachie
                 };
 
                 // GroupIDごとにデータを格納
@@ -133,12 +146,19 @@ public class TextClickSystem : MonoBehaviour
     {
         if (currentLineIndex < textDataDictionary[selectedGroupID].Count)
         {
+            for (i = 0; i < image_tachie.Length; i++)
+            {
+                image_tachie[i].SetActive(false);
+            }
             TextData currentText = textDataDictionary[selectedGroupID][currentLineIndex];
             image_serihu.SetActive(currentText.UIID == 1);
             image_text.SetActive(currentText.UIID == 2);
             image.SetActive(true);
+            image_tachie[currentText.Tachie].SetActive(true);
             textTMP.text = currentText.Text;
+            textChara.text = currentText.Character;
             textTMP.gameObject.SetActive(true);
+            textChara.gameObject.SetActive(true);
             isDisplayingText = true;
         }
         else
@@ -153,6 +173,11 @@ public class TextClickSystem : MonoBehaviour
         image_text.SetActive(false);
         image.SetActive(false);
         textTMP.gameObject.SetActive(false);
+        textChara.gameObject.SetActive(false);
+        for (i = 0; i < image_tachie.Length; i++)
+        {
+            image_tachie[i].SetActive(false);
+        }
         isDisplayingText = false;
         currentLineIndex = 0;
     }
