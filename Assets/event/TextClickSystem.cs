@@ -28,6 +28,7 @@ public class TextClickSystem : MonoBehaviour
     public GameObject image;
     public GameObject[] image_tachie;
     public GameObject[] image_event;
+    public GameObject[] image_raw;
 
     private int selectedGroupID;
     private int currentLineIndex = 0;
@@ -64,6 +65,7 @@ public class TextClickSystem : MonoBehaviour
         for (i = 0; i < image_event.Length; i++)
         {
             image_event[i].SetActive(false);
+            image_raw[i].SetActive(false);
         }
 
         // ƒQ[ƒ€ŠJŽnŽž‚ÉCSV‚ð“Ç‚Ýž‚Þ
@@ -161,6 +163,7 @@ public class TextClickSystem : MonoBehaviour
             for (i = 0; i < image_event.Length; i++)
             {
                 image_event[i].SetActive(false);
+                image_raw[i].SetActive(false);
             }
             TextData currentText = textDataDictionary[selectedGroupID][currentLineIndex];
             image_serihu.SetActive(currentText.UIID == 1);
@@ -175,6 +178,7 @@ public class TextClickSystem : MonoBehaviour
             if (currentText.GameEvent == 1)
             {
                 image_event[x].SetActive(true);
+                image_raw[x].SetActive(true);
                 x++;
             }
         }
@@ -198,6 +202,7 @@ public class TextClickSystem : MonoBehaviour
         for (i = 0; i < image_event.Length; i++)
         {
             image_event[i].SetActive(false);
+            image_raw[i].SetActive(false);
         }
         isDisplayingText = false;
         currentLineIndex = 0;
